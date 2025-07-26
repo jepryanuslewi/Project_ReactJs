@@ -11,7 +11,7 @@ export type Balance = {
   name: string;
   balance: number;
 };
-0
+
 const App = () => {
   // Display Show
   const [showDisplay, setShow] = useState(false);
@@ -80,17 +80,17 @@ const App = () => {
     setShowEdit(false);
   };
   useEffect(() => {
-    if (showEdit == true) {
+    if (showEdit === true) {
       setShow(true);
     }
   }, [showEdit]);
 
   // Calculate Saldo
   const income = balance
-    .filter((data) => data.name == "Income")
+    .filter((data) => data.name === "Income")
     .reduce((inc, data) => inc + data.balance, 0);
   const expense = balance
-    .filter((data) => data.name == "Expense")
+    .filter((data) => data.name === "Expense")
     .reduce((inc, data) => inc + data.balance, 0);
   const totalIncome = income - expense;
 
@@ -106,7 +106,7 @@ const App = () => {
         display={showDisplay ? "none" : "flex"}
         backgroundColor={"whiteAlpha.200"}
         height={"700px"}
-        width={"400px"}
+        width={"420px"}
         flexDirection={"column"}
         gap={"20px"}
         alignItems={"center"}
