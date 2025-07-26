@@ -13,8 +13,6 @@ function CardTracker({ handleEdit, income, onDelete }: IncomeProps) {
       {income.map((balance) => (
         <Box
           key={balance.id}
-          maxWidth={"100%"}
-          maxHeight={"100%"}
           marginBottom={"10px"}
           background={"black"}
           padding={"16px"}
