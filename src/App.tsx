@@ -106,7 +106,7 @@ const App = () => {
         backgroundColor={"whiteAlpha.200"}
         maxWidth={"100%"}
         maxHeight={"100%"}
-        height={"600px"}
+        height={"700px"}
         width={"400px"}
         flexDirection={"column"}
         gap={"20px"}
@@ -120,6 +120,8 @@ const App = () => {
           borderRadius={"10px"}
           textAlign={"center"}
           paddingTop={"14px"}
+          maxWidth={"100%"}
+          maxHeight={"100%"}
           width={"80%"}
           height={"80px"}
           fontSize={"2.5em"}

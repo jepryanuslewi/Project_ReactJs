@@ -3,18 +3,18 @@ import { FiEdit3 } from "react-icons/fi";
 import { BiTrash } from "react-icons/bi";
 import type { Balance } from "../App";
 type IncomeProps = {
-  
-  handleEdit : (id: number) => void
+  handleEdit: (id: number) => void;
   income: Balance[];
-  onDelete: (id:number)=>void;
+  onDelete: (id: number) => void;
 };
-function CardTracker({handleEdit, income,onDelete }: IncomeProps) {
-  
+function CardTracker({ handleEdit, income, onDelete }: IncomeProps) {
   return (
     <div>
       {income.map((balance) => (
         <Box
           key={balance.id}
+          maxWidth={"100%"}
+          maxHeight={"100%"}
           marginBottom={"10px"}
           background={"black"}
           padding={"16px"}
@@ -38,15 +38,22 @@ function CardTracker({handleEdit, income,onDelete }: IncomeProps) {
             <Text fontSize={"1.2em"}>$.{balance.balance}</Text>
           </Box>
           <Box display={"flex"} gap={"10px"}>
-            <Button variant={"surface"} colorPalette={"red"} onClick={()=>onDelete(balance.id)}>
+            <Button
+              variant={"surface"}
+              colorPalette={"red"}
+              onClick={() => onDelete(balance.id)}
+            >
               <Icon>
                 <BiTrash />
               </Icon>
             </Button>
-            <Button variant={"surface"} colorPalette={"green"} onClick={()=>{
-              handleEdit(balance.id);
-          
-            }}>
+            <Button
+              variant={"surface"}
+              colorPalette={"green"}
+              onClick={() => {
+                handleEdit(balance.id);
+              }}
+            >
               <Icon>
                 <FiEdit3 />
               </Icon>
