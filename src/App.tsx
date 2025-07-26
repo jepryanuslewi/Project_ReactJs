@@ -120,8 +120,6 @@ const App = () => {
           borderRadius={"10px"}
           textAlign={"center"}
           paddingTop={"14px"}
-          maxWidth={"100%"}
-          maxHeight={"100%"}
           width={"80%"}
           height={"80px"}
           fontSize={"2.5em"}
