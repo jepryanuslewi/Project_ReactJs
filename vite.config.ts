@@ -4,6 +4,6 @@ import tsconfigPaths from "vite-tsconfig-paths"
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Project_ReactJs',
+  base: '/Project_ReactJs/',
   plugins: [react(), tsconfigPaths()],
 })
