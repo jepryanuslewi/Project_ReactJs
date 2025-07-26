@@ -106,8 +106,8 @@ const App = () => {
         backgroundColor={"whiteAlpha.200"}
         maxWidth={"100%"}
         maxHeight={"100%"}
-        height={"800px"}
-        width={"500px"}
+        height={"700px"}
+        width={"400px"}
         flexDirection={"column"}
         gap={"20px"}
         alignItems={"center"}
