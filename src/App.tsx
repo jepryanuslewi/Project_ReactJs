@@ -104,8 +104,6 @@ const App = () => {
         padding={"20px 20px 20px 20px"}
         display={showDisplay ? "none" : "flex"}
         backgroundColor={"whiteAlpha.200"}
-        maxWidth={"100%"}
-        maxHeight={"100%"}
         height={"700px"}
         width={"400px"}
         flexDirection={"column"}
