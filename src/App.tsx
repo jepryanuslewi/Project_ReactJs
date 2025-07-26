@@ -102,6 +102,7 @@ const App = () => {
       <Box
         boxShadow={"0 4px 10px rgba(67, 234, 12, 1)"}
         padding={"20px 20px 20px 20px"}
+        marginBottom={"20px"}
         display={showDisplay ? "none" : "flex"}
         backgroundColor={"whiteAlpha.200"}
         height={"700px"}
