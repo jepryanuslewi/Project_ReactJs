@@ -128,9 +128,9 @@ const App = () => {
           borderRadius={"10px"}
           textAlign={"center"}
           paddingTop={"14px"}
-          height={{ base: "140px", sm: "140px", md: "140px", lg: "140px" }}
-          width={{ base: "250px", sm: "290px", md: "290px", lg: "290px" }}
-          fontSize={{ base: "1.8em", sm: "1.8em", md: "1.8em", lg: "1.8em" }}
+          height={{ base: "120px", sm: "140px", md: "140px", lg: "140px" }}
+          width={{ base: "220px", sm: "290px", md: "290px", lg: "290px" }}
+          fontSize={{ base: "1.6em", sm: "1.8em", md: "1.8em", lg: "1.8em" }}
           marginBottom={"20px"}
         >
           Balance Recap
