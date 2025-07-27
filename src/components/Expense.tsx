@@ -37,8 +37,8 @@ const Expense = ({
     <div>
       <Box
         boxShadow={"0 4px 10px rgba(234, 23, 12, 1)"}
-        height={"260px"}
-        width={"400px"}
+        height={{ base: "270px", sm: "270px", md: "270px", lg: "270px" }}
+        width={{ base: "350px", sm: "350px", md: "350px", lg: "350px" }}
         display={show ? "flex" : "none"}
         paddingTop={"50px"}
         justifyContent={"center"}

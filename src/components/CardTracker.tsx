@@ -15,7 +15,7 @@ function CardTracker({ handleEdit, income, onDelete }: IncomeProps) {
           key={balance.id}
           marginBottom={"10px"}
           background={"black"}
-          padding={"16px"}
+          padding={{base:"5px 20px 5px 20px",sm:"5px 20px 5px 20px",md:"5px 20px 5px 20px", lg:"5px 20px 5px 20px"}}
           borderRadius={"10px"}
           display={"flex"}
           justifyContent={"space-between"}

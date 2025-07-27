@@ -5,6 +5,8 @@ body{
   align-items: center;
   font-family: "Arial", sans-serif;
   padding-top: 20px;
+  overflow: hidden;
+  height: 100%;
 }
 
 .heading{

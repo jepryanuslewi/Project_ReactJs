@@ -12,6 +12,15 @@ export type Balance = {
   balance: number;
 };
 
+// const breakpoints = {
+//   base: "0rem", // 0px
+//   sm: "30rem", // ~480px
+//   md: "48rem", // ~768px
+//   lg: "62rem", // ~992px
+//   xl: "80rem", // ~1280px
+//   "2xl": "96rem", // ~1536px
+// };
+
 const App = () => {
   // Display Show
   const [showDisplay, setShow] = useState(false);
@@ -105,8 +114,8 @@ const App = () => {
         marginBottom={"20px"}
         display={showDisplay ? "none" : "flex"}
         backgroundColor={"whiteAlpha.200"}
-        height={"700px"}
-        width={"420px"}
+        height={{ base: "570px", sm: "570px", md: "570px", lg: "570px" }}
+        width={{ base: "320px", sm: "320px", md: "320px", lg: "320px" }}
         flexDirection={"column"}
         gap={"20px"}
         alignItems={"center"}
@@ -119,24 +128,37 @@ const App = () => {
           borderRadius={"10px"}
           textAlign={"center"}
           paddingTop={"14px"}
-          width={"80%"}
-          height={"80px"}
-          fontSize={"2.5em"}
+          height={{ base: "140px", sm: "140px", md: "140px", lg: "140px" }}
+          width={{ base: "290px", sm: "290px", md: "290px", lg: "290px" }}
+          fontSize={{ base: "1.8em", sm: "1.8em", md: "1.8em", lg: "1.8em" }}
           marginBottom={"20px"}
         >
-          Saldo Tracker
+          Balance Recap
         </Heading>
         <Box
-        display={"flex"}
-          padding={"10px 50px 10px 50px"}
+          display={"flex"}
+          width={{ base: "250px", sm: "250px", md: "250px", lg: "250px" }}
+          height={{ base: "130px", sm: "130px", md: "130px", lg: "130px" }}
           boxShadow={"0 4px 10px rgba(16, 213, 32, 0.2)"}
           color={"rgba(175, 186, 187, 1)"}
+          alignItems={"center"}
+          justifyContent={"center"}
           gap={"3px"}
         >
-          <Heading fontSize={"1.3em"}
-          fontWeight={"bold"}>Total Saldo : </Heading>
-          <Heading marginLeft={"10px"} color={totalIncome<0 ? "red" : "rgba(12, 219, 234, 1)"}> $.</Heading>
-          <Heading color={totalIncome<0 ? "red" : "rgba(12, 219, 234, 1)"}> {totalIncome}</Heading>
+          <Heading fontSize={{ base: "1.1em" }} fontWeight={"bold"}>
+            Total Saldo :{" "}
+          </Heading>
+          <Heading
+            marginLeft={"10px"}
+            color={totalIncome < 0 ? "red" : "rgba(12, 219, 234, 1)"}
+          >
+            {" "}
+            $.
+          </Heading>
+          <Heading color={totalIncome < 0 ? "red" : "rgba(12, 219, 234, 1)"}>
+            {" "}
+            {totalIncome}
+          </Heading>
         </Box>
 
         <Box gap={"30px"} display={"flex"} marginTop={"20px"}>
@@ -165,10 +187,11 @@ const App = () => {
         <Box
           padding={"10px"}
           backgroundColor={"rgba(0,0,0,0.3)"}
-          width={"400px"}
-          height={"600px"}
+          height={{ base: "700px", sm: "700px", md: "700px", lg: "700px" }}
+          width={{ base: "280px", sm: "280px", md: "280px", lg: "280px" }}
           borderRadius={"10px"}
           boxShadow={"0 4px 10px rgba(7, 138, 164, 0.3)"}
+          overflow={"scroll"}
         >
           {showDisplay ? null : (
             <CardTracker
