@@ -133,7 +133,7 @@ const App = () => {
           fontSize={{ base: "1.6em", sm: "1.8em", md: "1.8em", lg: "1.8em" }}
           marginBottom={"20px"}
         >
-          Balance Recap
+          Wopp Youu
         </Heading>
         <Box
           display={"flex"}
