@@ -114,8 +114,8 @@ const App = () => {
         marginBottom={"20px"}
         display={showDisplay ? "none" : "flex"}
         backgroundColor={"whiteAlpha.200"}
-        height={{ base: "570px", sm: "570px", md: "570px", lg: "570px" }}
-        width={{ base: "320px", sm: "320px", md: "320px", lg: "320px" }}
+        height={{ base: "540px", sm: "570px", md: "570px", lg: "570px" }}
+        width={{ base: "290px", sm: "320px", md: "320px", lg: "320px" }}
         flexDirection={"column"}
         gap={"20px"}
         alignItems={"center"}
@@ -187,8 +187,8 @@ const App = () => {
         <Box
           padding={"10px"}
           backgroundColor={"rgba(0,0,0,0.3)"}
-          height={{ base: "700px", sm: "700px", md: "700px", lg: "700px" }}
-          width={{ base: "280px", sm: "280px", md: "280px", lg: "280px" }}
+          height={{ base: "600px", sm: "700px", md: "700px", lg: "700px" }}
+          width={{ base: "220px", sm: "280px", md: "280px", lg: "280px" }}
           borderRadius={"10px"}
           boxShadow={"0 4px 10px rgba(7, 138, 164, 0.3)"}
           overflow={"scroll"}
