@@ -129,7 +129,7 @@ const App = () => {
           textAlign={"center"}
           paddingTop={"14px"}
           height={{ base: "140px", sm: "140px", md: "140px", lg: "140px" }}
-          width={{ base: "290px", sm: "290px", md: "290px", lg: "290px" }}
+          width={{ base: "250px", sm: "290px", md: "290px", lg: "290px" }}
           fontSize={{ base: "1.8em", sm: "1.8em", md: "1.8em", lg: "1.8em" }}
           marginBottom={"20px"}
         >
@@ -163,8 +163,8 @@ const App = () => {
 
         <Box gap={"30px"} display={"flex"} marginTop={"20px"}>
           <Button
-            width={"120px"}
-            height={"50px"}
+            height={{ base: "50px", sm: "50px", md: "50px", lg: "50px" }}
+          width={{ base: "120px", sm: "120px", md: "120px", lg: "120px" }}
             fontSize={"18px"}
             variant={"outline"}
             colorPalette={"green"}
@@ -188,7 +188,7 @@ const App = () => {
           padding={"10px"}
           backgroundColor={"rgba(0,0,0,0.3)"}
           height={{ base: "600px", sm: "700px", md: "700px", lg: "700px" }}
-          width={{ base: "220px", sm: "280px", md: "280px", lg: "280px" }}
+          width={{ base: "250px", sm: "280px", md: "280px", lg: "280px" }}
           borderRadius={"10px"}
           boxShadow={"0 4px 10px rgba(7, 138, 164, 0.3)"}
           overflow={"scroll"}
