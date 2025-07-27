@@ -188,7 +188,7 @@ const App = () => {
           padding={"10px"}
           backgroundColor={"rgba(0,0,0,0.3)"}
           height={{ base: "600px", sm: "700px", md: "700px", lg: "700px" }}
-          width={{ base: "250px", sm: "280px", md: "280px", lg: "280px" }}
+          width={{ base: "270px", sm: "280px", md: "280px", lg: "280px" }}
           borderRadius={"10px"}
           boxShadow={"0 4px 10px rgba(7, 138, 164, 0.3)"}
           overflow={"scroll"}
