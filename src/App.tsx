@@ -115,7 +115,7 @@ const App = () => {
         display={showDisplay ? "none" : "flex"}
         backgroundColor={"whiteAlpha.200"}
         height={{ base: "540px", sm: "570px", md: "570px", lg: "570px" }}
-        width={{ base: "290px", sm: "320px", md: "320px", lg: "320px" }}
+        width={{ base: "290px", sm: "320px", md: "320px", lg: "380px" }}
         flexDirection={"column"}
         gap={"20px"}
         alignItems={"center"}
@@ -133,7 +133,7 @@ const App = () => {
           fontSize={{ base: "1.6em", sm: "1.8em", md: "1.8em", lg: "1.8em" }}
           marginBottom={"20px"}
         >
-          Wopp Youu
+          Balance Recap
         </Heading>
         <Box
           display={"flex"}
